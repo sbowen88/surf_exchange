@@ -124,8 +124,10 @@ app.get("/auth/logout", function (req, res) {
   req.logOut();
 
   res.redirect(
+    // 'http://casurfexchange.com'
     302,
-    `https://scottblank.auth0.com/v2/logout?returnTo=http%3A%2F%2F${AUTH0}`
+    // `https://scottblank.auth0.com/v2/logout?returnTo=http%3A%2F%2F${AUTH0}`
+    'https://scottblank.auth0.com/v2/logout?returnTo=http%3A%2F%2Fwww.casurfexchange.com'
   );
 });
 app.get("/checkLoggedIn", checkLoggedIn);
