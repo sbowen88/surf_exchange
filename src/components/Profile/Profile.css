@@ -1,0 +1,48 @@
+.alert,
+.alert-info,
+.alert-dismissable {
+  font-size: 20px;
+}
+.form-horizontal,
+.profile-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h3,
+.profile-photo-upload {
+  color: white;
+}
+.no-file-chosen {
+  font-size: 0.75rem;
+}
+.profile-picture {
+  height: 200px;
+}
+.home-link {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  border: white 2px solid;
+  padding: 5px 20px;
+}
+.alert {
+  padding: 0 1.25rem;
+  margin-top: 20px;
+}
+.cancel-btn {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-link {
+    font-size: 16px;
+  }
+  .form-horizontal,
+  .profile-input {
+    width: 100%;
+  }
+}

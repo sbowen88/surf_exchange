@@ -1,0 +1,42 @@
+.product-view-container {
+  width: 70%;
+  margin-top: 20px;
+  background: white;
+  height: auto;
+  display: flex;
+  align-content: flex-start;
+  padding-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 2px #666;
+}
+
+.product-view-img{
+    height: auto;
+    width: 295px;
+    border-radius: 5px;
+    border: 2px solid fuchsia;
+}
+.product-view-price{
+    margin-top:20px;
+}
+.link-to-maps{
+    color:black;
+    padding: 5px 10px;
+    background: lightblue;
+    border-radius: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-bottom:10px;
+}
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 16px;
+  }
+  .product-view-container {
+    width: 90%;
+    height: 80vh;
+    margin-top: 30px;
+    padding: 30px 10px;
+  }
+}

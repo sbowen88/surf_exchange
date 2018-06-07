@@ -1,0 +1,25 @@
+.navbar,
+.dropdown-item {
+  font: 300 15px/1.5 "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 18px;
+  width:100%;
+}
+a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+.btn, .form-inline{
+    font: 300 15px/1.5 "Helvetica Neue", helvetica, arial, sans-serif;
+
+}
+.donate-btn{
+  font-size:15px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  color:white;
+  font-weight:500;
+  margin: 0 6px 0 0;
+}

@@ -1,0 +1,110 @@
+/* body{
+    background: white;
+    font: 300 15px/1.5 "Helvetica Neue", helvetica, arial, sans-serif;
+} */
+
+.post_ad_root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.photo-upload {
+  color: white;
+  margin: 0px;
+}
+
+.input-group,
+.form-group {
+  width: 70%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-ad-category {
+  width: 60%;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 20px;
+}
+/* .file-upload-container{
+  display:flex;
+  width:50%;
+  align-items: center;
+  justify-content: center;
+} */
+.file-name-text{
+  margin:0px;
+}
+.uploaded-photo{
+  margin-bottom:5px;
+}
+
+.post-ad-btn {
+  border-radius: 5px;
+  background: #1aab8a;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  width:40%;
+  display:flex;
+  justify-content: center;
+}
+
+.post-ad-btn:hover {
+  background: #fff;
+  color: #1aab8a;
+}
+
+.post-ad-btn:before,
+.post-ad-btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1aab8a;
+  transition: 400ms ease all;
+}
+
+.post-ad-btn:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.post-ad-btn:hover:before,
+.post-ad-btn:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.please-log-in {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .post-ad-category {
+    width: 90%;
+  }
+  .contact::placeholder{
+    font-size: 11px;
+  }
+}

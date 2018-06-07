@@ -1,0 +1,36 @@
+.myPosts-card-body{
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
+
+.delete-button{
+    color:white;
+    background-image: radial-gradient(circle at 50% -46%, #ff9770, #ff7a6e);
+    padding: 5px 15px;
+    font-size:14px;
+    letter-spacing:1px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    margin-top:5px;
+
+}
+.delete-button:hover{
+    color:black;
+}
+
+.edit-post-button{
+    color:black;
+    background:lightblue;
+    padding: 2px 10px;
+    font-size:14px;
+    letter-spacing:1px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    width:35%;
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+.edit-post-button:hover{
+    color:white;
+}

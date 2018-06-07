@@ -1,0 +1,17 @@
+.edit-post-container {
+    margin-top: 50px;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#edit-post-button-container {
+    align-items: center;
+}
+#save-button{
+    margin:0 10px 5px 0;
+    
+}

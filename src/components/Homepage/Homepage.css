@@ -1,0 +1,182 @@
+body {
+  font: 300 15px/1.5 "Helvetica Neue", helvetica, arial, sans-serif;
+  background: #333;
+  /* background-image: url("./../../Images/site_background.jpg"); */
+  margin: 15px;
+}
+.view-icon-container{
+  display:flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+}
+.view-icon-btn{
+  height: 50px;
+  width:50px;
+  margin: 0 5px;
+}
+
+.card {
+  width: 20rem;
+  margin: 5px 20px;
+  min-height: 15rem;
+
+}
+.image-link{
+  width:100%;
+  height:210px;
+  margin: 5px auto;
+}
+.card-img-top{
+  width:310px;
+  height:210px;
+  margin: 5px auto;
+}
+.card-body {
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+}
+.card-link {
+  color: black;
+}
+.card-text {
+  color: black;
+  max-height: 4em;
+  min-height: 4em;
+  font-size:17px;
+  margin:-10px 1px;
+}
+.card-title {
+  min-height: 2em;
+  max-height: 2em;
+  margin-bottom: -0.25rem;
+
+}
+.list-group-item{
+  padding:0px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 15px 2px #666;
+}
+
+section {
+  clear: left;
+}
+
+.welcome-text {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 100;
+  letter-spacing: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
+}
+
+h1,
+#main_content {
+  padding: 15px;
+}
+
+p {
+  margin: 15px 0;
+  color: white;
+}
+
+footer > a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 16px;
+  }
+}
+
+/* Required Styling */
+
+label input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox .glyphicon {
+  color: gold;
+  position: absolute;
+  top: 0.4em;
+  left: -1.25em;
+  font-size: 0.75em;
+}
+
+.custom-checkbox .glyphicon-star-empty {
+  color: gray;
+}
+
+.custom-checkbox .glyphicon-star {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.custom-checkbox:hover .glyphicon-star {
+  opacity: 0.5;
+}
+
+.custom-checkbox input[type="checkbox"]:checked ~ .glyphicon-star {
+  opacity: 1;
+}
+.favorite-text {
+  color: white;
+  font-size: 13px;
+  background: blue;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+.un-favorite-text {
+  color: black;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background: #ff6666;
+  padding: 5px;
+  border-radius: 5px;
+}
+#card-container {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 0px;
+}
+.post-date {
+  font-size: 12px;
+  color: black;
+  margin:2px;
+}

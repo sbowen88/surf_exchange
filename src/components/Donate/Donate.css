@@ -1,0 +1,7 @@
+.donate-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.donation-input{
+    width:200px;
+}
