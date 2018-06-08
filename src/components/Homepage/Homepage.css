@@ -194,6 +194,7 @@ label input[type="checkbox"] {
   background: white;
   width: 50%;
   border-radius: 40px;
+  letter-spacing: 1px;
 }
 .list-menu-item:hover{
   color:lightblue;
