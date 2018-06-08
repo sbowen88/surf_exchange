@@ -68,13 +68,13 @@ class EditPost extends Component {
     });
   }
   patchPost() {
-    let { title, description, price, photo } = this.state;
+    let { title, description, price, uploadedFileCloudinaryUrl } = this.state;
     let { id } = this.props.match.params;
     let body = {
       title,
       description,
       price,
-      photo,
+      uploadedFileCloudinaryUrl,
       id
     };
 
@@ -102,12 +102,21 @@ class EditPost extends Component {
                 className="avatar img-circle profile-picture"
                 alt="avatar"
               />
-              <h6 className="profile-photo-upload">
+              {/* <h6 className="profile-photo-upload">
                 Upload a different photo...
               </h6>
-              <input type="file" className="form-control no-file-chosen" />
+              <input type="file" className="form-control no-file-chosen" /> */}
             </div>
           </div>
+          {this.state.uploadedFileCloudinaryUrl === "" ? (
+            <Dropzone
+              multiple={false}
+              accept="image/*"
+              onDrop={e => this.onImageDrop(e)}
+            >
+              <p>Drop an image or click to select a file to upload a different photo.</p>
+            </Dropzone>
+          ) : null}
           <div class="form-group">
             <label for="formGroupExampleInput">Title</label>
             <input
