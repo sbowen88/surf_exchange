@@ -128,7 +128,7 @@ app.get("/auth/logout", function (req, res) {
     302,
     // `https://scottblank.auth0.com/v2/logout?returnTo=http%3A%2F%2F${AUTH0}`
     // 'https://scottblank.auth0.com/v2/logout?returnTo=http%3A%2F%2Fcasurfexchange.com'
-   `https://scottblank.auth0.com/v2/logout?returnTo=http%3A%2F%2Fcasurfexchange.com&client_id=${CLIENT_ID}`
+   `https://scottblank.auth0.com/v2/logout?returnTo=http%3A%2F%2Fwww.casurfexchange.com&client_id=${CLIENT_ID}`
 
   );
 });
