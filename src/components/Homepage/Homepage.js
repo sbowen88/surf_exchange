@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "./Homepage.css";
 import Navbar from "./../Navbar/Navbar";
-import gallery from "./../../Images/gallery-icon-last.png";
-import list from "./../../Images/hamburger-icon.png";
+import gallery from "./../../Images/gallery-final.png";
+import list from "./../../Images/list-menu-final.png";
 import { getUserInfo } from "./../../Ducks/Reducer";
 
 class Homepage extends Component {
