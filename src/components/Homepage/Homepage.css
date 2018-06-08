@@ -81,6 +81,7 @@ section {
 .welcome-text {
   font-size: 20px;
   letter-spacing: 2px;
+  margin: 0 10px;
 }
 
 h1 {
