@@ -9,6 +9,9 @@
   border-radius: 5px;
   box-shadow: 0 0 15px 2px #666;
 }
+.product-view-container h4{
+  font-weight:300;
+}
 
 .product-view-img{
     height: auto;
