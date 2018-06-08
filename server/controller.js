@@ -134,7 +134,7 @@ module.exports = {
       title,
       description,
       price,
-      photo,
+      uploadedFileCloudinaryUrl,
       id
     } = req.body;
 
@@ -142,7 +142,7 @@ module.exports = {
       .postPatch([title,
         description,
         price,
-        photo,
+        uploadedFileCloudinaryUrl,
         id
       ])
       .then(resp => {
