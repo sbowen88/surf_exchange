@@ -13,7 +13,9 @@ class EditPost extends Component {
       photo:"",
       price:"",
       description:"",
-      title:""
+      title:"",
+      uploadedFile: "",
+      uploadedFileCloudinaryUrl: "",
     };
   }
   componentDidMount() {
@@ -31,6 +33,13 @@ class EditPost extends Component {
   handleChange(prop, val) {
     console.log("changing");
     this.setState({ [prop]: val });
+  }
+  onImageDrop(files) {
+    // console.log(files);
+    this.setState({
+      uploadedFile: files[0]
+    });
+    this.handleImageUpload(files[0]);
   }
   patchPost() {
     let { title, description, price, photo } = this.state;
