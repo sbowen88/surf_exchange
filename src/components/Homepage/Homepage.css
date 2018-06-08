@@ -30,8 +30,8 @@ body {
   margin: 5px auto;
 }
 .card-img-top {
-  width: 310px;
-  height: 210px;
+  width: auto;
+  height: auto;
   margin: 5px auto;
 }
 .card-body {
