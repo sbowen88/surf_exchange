@@ -15,7 +15,8 @@ class EditPost extends Component {
       description: "",
       title: "",
       uploadedFile: "",
-      uploadedFileCloudinaryUrl: ""
+      uploadedFileCloudinaryUrl: "",
+      photo_err_message: ""
     };
   }
   componentDidMount() {
@@ -108,15 +109,39 @@ class EditPost extends Component {
               <input type="file" className="form-control no-file-chosen" /> */}
             </div>
           </div>
+          <br />
           {this.state.uploadedFileCloudinaryUrl === "" ? (
             <Dropzone
               multiple={false}
               accept="image/*"
               onDrop={e => this.onImageDrop(e)}
             >
-              <p>Drop an image or click to select a file to upload a different photo.</p>
+              <p>
+                Drop an image or click to select a file to upload a different
+                photo.
+              </p>
             </Dropzone>
           ) : null}
+          <p
+            className="photo-err-message"
+            style={{
+              color: "red",
+              marginTop: "1px",
+              marginBottom: "1px",
+              fontSize: "20px"
+            }}
+          >
+            {this.state.photo_err_message}
+          </p>
+          {this.state.uploadedFileCloudinaryUrl === "" ? null : (
+            <div>
+              <p className="file-name-text">{this.state.uploadedFile.name}</p>
+              <img
+                className="uploaded-photo"
+                src={this.state.uploadedFileCloudinaryUrl}
+              />
+            </div>
+          )}
           <div class="form-group">
             <label for="formGroupExampleInput">Title</label>
             <input
