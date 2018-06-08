@@ -33,7 +33,13 @@ class EditPost extends Component {
   }
   getProduct() {
     axios.get(`/api/product/${this.props.match.params.id}`).then(res => {
-      this.setState({ product: res.data[0] });
+      this.setState({
+        product: res.data[0],
+        price: res.data[0].price,
+        photo: res.data[0].photo,
+        description: res.data[0].description,
+        title: res.data[0].title
+      });
     });
   }
   handleChange(prop, val) {
