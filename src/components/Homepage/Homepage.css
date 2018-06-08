@@ -4,15 +4,15 @@ body {
   /* background-image: url("./../../Images/site_background.jpg"); */
   margin: 15px;
 }
-.view-icon-container{
-  display:flex;
+.view-icon-container {
+  display: flex;
   height: auto;
   width: 100%;
   justify-content: center;
 }
-.view-icon-btn{
+.view-icon-btn {
   height: 50px;
-  width:50px;
+  width: 50px;
   margin: 0 5px;
 }
 
@@ -20,16 +20,15 @@ body {
   width: 20rem;
   margin: 5px 20px;
   min-height: 15rem;
-
 }
-.image-link{
-  width:100%;
-  height:210px;
+.image-link {
+  width: 100%;
+  height: 210px;
   margin: 5px auto;
 }
-.card-img-top{
-  width:310px;
-  height:210px;
+.card-img-top {
+  width: 310px;
+  height: 210px;
   margin: 5px auto;
 }
 .card-body {
@@ -44,17 +43,16 @@ body {
   color: black;
   max-height: 4em;
   min-height: 4em;
-  font-size:17px;
-  margin:-10px 1px;
+  font-size: 17px;
+  margin: -10px 1px;
 }
 .card-title {
   min-height: 2em;
   max-height: 2em;
   margin-bottom: -0.25rem;
-
 }
-.list-group-item{
-  padding:0px;
+.list-group-item {
+  padding: 0px;
   font-weight: 500;
   font-size: 20px;
 }
@@ -81,7 +79,7 @@ section {
 .welcome-text {
   font-size: 20px;
   letter-spacing: 2px;
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 
 h1 {
@@ -116,6 +114,11 @@ footer > a {
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 16px;
+  }
+  .welcome-text {
+    font-size: 14px;
+    letter-spacing: 2px;
+    /* margin: 0 10px; */
   }
 }
 
@@ -179,5 +182,5 @@ label input[type="checkbox"] {
 .post-date {
   font-size: 12px;
   color: black;
-  margin:2px;
+  margin: 2px;
 }
