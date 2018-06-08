@@ -16,8 +16,7 @@ class Homepage extends Component {
       products: [],
       sort_parameter: "",
       selected_clicked: false,
-      list_menu_clicked:false,
-      gallery_menu_clicked:true
+      gallery_menu_clicked: true
     };
   }
   componentDidMount() {
@@ -46,6 +45,14 @@ class Homepage extends Component {
       });
     });
   }
+  galleryMenuClick() {
+    console.log("changing to gallery");
+    this.setState({ gallery_menu_clicked: true });
+  }
+  listMenuClick() {
+    console.log("changing to list");
+    this.setState({ gallery_menu_clicked: false });
+  }
 
   render() {
     // console.log(this.state.products);
@@ -66,58 +73,62 @@ class Homepage extends Component {
             })
           : this.state.products;
 
-    const info = this.state.gallery_menu_clicked===true?currentProducts.map((product, i) => {
-      return (
-        <div className="card">
-          <Link className="image-link" to={`/product/${product.id}`}>
-            <img
-              className="card-img-top"
-              src={product.photo}
-              alt="Product Image"
-            />
-          </Link>
-          <div className="card-body">
-            <h5 className="card-title">{product.title}</h5>
-            {/* <p className="card-text">{product.description}</p> */}
-          </div>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">${product.price}.00</li>
-          </ul>
-          <div className="card-body">
-            {/* <a href="#" className="card-link">
+    const info =
+      this.state.gallery_menu_clicked === true
+        ? currentProducts.map((product, i) => {
+            return (
+              <div className="card">
+                <Link className="image-link" to={`/product/${product.id}`}>
+                  <img
+                    className="card-img-top"
+                    src={product.photo}
+                    alt="Product Image"
+                  />
+                </Link>
+                <div className="card-body">
+                  <h5 className="card-title">{product.title}</h5>
+                  {/* <p className="card-text">{product.description}</p> */}
+                </div>
+                <ul className="list-group list-group-flush">
+                  <li className="list-group-item">${product.price}.00</li>
+                </ul>
+                <div className="card-body">
+                  {/* <a href="#" className="card-link">
               <Link className="card-link" to={`/product/${product.id}`} key={i}>
                 View Post
               </Link>
             </a> */}
-            <label for="id-of-input" className="custom-checkbox">
-              <input type="checkbox" id="id-of-input" />
+                  <label for="id-of-input" className="custom-checkbox">
+                    <input type="checkbox" id="id-of-input" />
 
-              {product.is_favorite === true ? (
-                <span
-                  className="un-favorite-text"
-                  onClick={_ => this.removeFromFavorites(product.id)}
-                >
-                  Un-Favorite
-                </span>
-              ) : (
-                <span
-                  className="favorite-text"
-                  onClick={_ => this.addToFavorites(product.id)}
-                >
-                  Add To Favorites
-                </span>
-              )}
-            </label>
-            <p className="post-date">posted on {product.date}</p>
-          </div>
-        </div>
-      );
-    }):currentProducts.map((product, i) => {
-      return (
-        <div>
-          <Link to={`/product/${product.id}`}>{product.title}</Link>
-        </div>
-      )});
+                    {product.is_favorite === true ? (
+                      <span
+                        className="un-favorite-text"
+                        onClick={_ => this.removeFromFavorites(product.id)}
+                      >
+                        Un-Favorite
+                      </span>
+                    ) : (
+                      <span
+                        className="favorite-text"
+                        onClick={_ => this.addToFavorites(product.id)}
+                      >
+                        Add To Favorites
+                      </span>
+                    )}
+                  </label>
+                  <p className="post-date">posted on {product.date}</p>
+                </div>
+              </div>
+            );
+          })
+        : currentProducts.map((product, i) => {
+            return (
+              <Link className="list-menu-item" to={`/product/${product.id}`}>
+                {product.title}
+              </Link>
+            );
+          });
     return (
       <div className="container-fluid">
         <h1>CA Surf Exchange</h1>
@@ -133,17 +144,23 @@ class Homepage extends Component {
               alt="gallery view"
               title="gallery view"
               className="view-icon-btn"
+              onClick={e => this.galleryMenuClick()}
             />
             <img
               src={list}
               alt="list view"
               title="list view"
               className="view-icon-btn"
+              onClick={e => this.listMenuClick()}
             />
           </div>
-          <div className="container-fluid" id="card-container">
-            {info}
-          </div>
+          {this.state.gallery_menu_clicked === true ? (
+            <div className="container-fluid" id="card-container">
+              {info}
+            </div>
+          ) : (
+            <div className="list-menu">{info}</div>
+          )}
         </section>
         <footer>
           <p> @CASURFEXCHANGE</p>
