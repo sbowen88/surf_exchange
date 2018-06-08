@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import axios from "axios";
+import refresh from "./../../Images/reload.png";
 import "./Navbar.css";
 import {
   select_category,
@@ -321,6 +322,12 @@ class Navbar extends Component {
               Search
             </button>
           </form>
+          <img
+            className="refresh-icon"
+            src={refresh}
+            alt=""
+            onClick={e => this.props.select_search_input("")}
+          />
         </div>
       </nav>
     );
