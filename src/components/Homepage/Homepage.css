@@ -15,6 +15,9 @@ body {
   width: 50px;
   margin: 0 5px;
 }
+.view-icon-btn:hover{
+  cursor:pointer;
+}
 
 .card {
   width: 20rem;

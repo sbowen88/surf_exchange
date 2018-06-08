@@ -15,7 +15,9 @@ class Homepage extends Component {
       user: [],
       products: [],
       sort_parameter: "",
-      selected_clicked: false
+      selected_clicked: false,
+      list_menu_clicked:false,
+      gallery_menu_clicked:true
     };
   }
   componentDidMount() {
@@ -64,7 +66,7 @@ class Homepage extends Component {
             })
           : this.state.products;
 
-    const info = currentProducts.map((product, i) => {
+    const info = this.state.gallery_menu_clicked===true?currentProducts.map((product, i) => {
       return (
         <div className="card">
           <Link className="image-link" to={`/product/${product.id}`}>
@@ -110,7 +112,12 @@ class Homepage extends Component {
           </div>
         </div>
       );
-    });
+    }):currentProducts.map((product, i) => {
+      return (
+        <div>
+          <Link to={`/product/${product.id}`}>{product.title}</Link>
+        </div>
+      )});
     return (
       <div className="container-fluid">
         <h1>CA Surf Exchange</h1>
