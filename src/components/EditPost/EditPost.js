@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import "./EditPost.css";
 import axios from 'axios';
 import Navbar from './../Navbar/Navbar'
+import Dropzone from "react-dropzone";
+import request from "superagent";
+import "./EditPost.css";
 
 class EditPost extends Component {
   constructor(props) {
