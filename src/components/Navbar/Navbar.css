@@ -2,7 +2,7 @@
 .dropdown-item {
   font: 300 15px/1.5 "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 18px;
-  width:100%;
+  width: 100%;
 }
 a {
   color: rgba(0, 0, 0, 0.5);
@@ -12,24 +12,33 @@ a:hover {
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
-.btn, .form-inline{
-    font: 300 15px/1.5 "Helvetica Neue", helvetica, arial, sans-serif;
-
+.btn,
+.form-inline {
+  font: 300 15px/1.5 "Helvetica Neue", helvetica, arial, sans-serif;
 }
-.donate-btn{
-  font-size:15px;
-  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
-  color:white;
-  font-weight:500;
+.donate-btn {
+  font-size: 15px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 500;
   margin: 0 6px 0 0;
 }
-.refresh-icon{
-  height:20px;
-  width:20px;
-  margin:4px 4px 4px 10px;
+.refresh-icon {
+  height: 20px;
+  width: 20px;
+  margin: 4px 4px 4px 10px;
 }
-@media screen and (max-width: 768px){
-  .refresh-icon{
-    display:none;
+.refresh-btn {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .refresh-icon {
+    display: none;
+  }
+  .refresh-btn {
+    display: inline-block;
+  }
+  .search-button{
+    display:inline-block;
   }
 }

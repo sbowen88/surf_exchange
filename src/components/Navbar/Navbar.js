@@ -316,10 +316,17 @@ class Navbar extends Component {
               onChange={e => this.props.select_search_input(e.target.value)}
             />
             <button
-              className="btn btn-outline-secondary my-2 my-sm-0"
+              className="search-btn btn btn-outline-secondary my-2 my-sm-0"
               type="submit"
             >
               Search
+            </button>
+            <button
+              className="refresh-btn btn btn-dark my-2 my-sm-0"
+              type="submit"
+              onClick={e => this.props.select_search_input("")}
+            >
+              Refresh
             </button>
           </form>
           <img
