@@ -176,11 +176,19 @@ class EditPost extends Component {
           <div class="form-group">
             <label for="formGroupExampleInput">Price</label>
             <input
-              type="text"
-              class="form-control"
+              type="number"
+              className="form-control currency"
+              pattern="[0-9]"
+              min="0"
+              step="1"
+              maxlength="5"
+              aria-label="Default"
+              data-number-to-fixed="2"
+              data-number-stepfactor="100"
+              aria-describedby="inputGroup-sizing-default"
               id="formGroupExampleInput"
               value={price}
-              onChange={e => this.handleChange("price", e.target.value)}
+              onChange={e => this.handlePrice("price", e.target.value)}
             />
           </div>
           <div className="form-group" id="edit-post-button-container">
