@@ -46,6 +46,11 @@ class EditPost extends Component {
     console.log("changing");
     this.setState({ [prop]: val });
   }
+  handlePrice(prop, val) {
+    let price = Math.round(parseInt(val));
+    console.log(price);
+    this.setState({ [prop]: price });
+  }
   onImageDrop(files) {
     // console.log(files);
     this.setState({
