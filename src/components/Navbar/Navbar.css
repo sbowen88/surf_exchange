@@ -28,6 +28,10 @@ a:hover {
   width: 20px;
   margin: 4px 4px 4px 10px;
 }
+/* .refresh-icon:hover {
+  background: lightblue;
+  border-radius: 5px;
+} */
 .refresh-btn {
   display: none;
 }
@@ -38,7 +42,7 @@ a:hover {
   .refresh-btn {
     display: inline-block;
   }
-  .search-button{
-    display:inline-block;
+  .search-button {
+    display: inline-block;
   }
 }
