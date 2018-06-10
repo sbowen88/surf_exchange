@@ -80,8 +80,15 @@ class EditPost extends Component {
     });
   }
   patchPost() {
-    let { title, description, price, uploadedFileCloudinaryUrl } = this.state;
+    let {
+      title,
+      description,
+      price,
+      uploadedFileCloudinaryUrl,
+      photo
+    } = this.state;
     let { id } = this.props.match.params;
+
     let body = {
       title,
       description,

@@ -1,7 +1,8 @@
 .donate-container{
     display:flex;
     flex-wrap:wrap;
+    margin-right:20px;
 }
 .donation-input{
-    width:200px;
+    width:120px;
 }
