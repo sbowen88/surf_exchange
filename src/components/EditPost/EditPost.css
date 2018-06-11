@@ -1,17 +1,34 @@
 .edit-post-container {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #edit-post-button-container {
+  align-items: center;
+}
+#save-button {
+  margin: 0 10px 5px 0;
+}
+.edit-post-input{
+    display:flex;
     align-items: center;
+    width:45%;
 }
-#save-button{
-    margin:0 10px 5px 0;
-    
+.edit-post-price-input{
+    width:20%;
+    align-items:center;
 }
+@media screen and (max-width: 768px) {
+    .edit-post-input {
+      width:90%;
+    }
+    .edit-post-price-input{
+        width:40%;
+    }
+ 
+  }
