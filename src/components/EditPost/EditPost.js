@@ -164,7 +164,7 @@ class EditPost extends Component {
             <label for="formGroupExampleInput">Title</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control title-input"
               id="formGroupExampleInput"
               value={title}
               onChange={e => this.handleChange("title", e.target.value)}
@@ -173,18 +173,18 @@ class EditPost extends Component {
           <div class="form-group edit-post-input">
             <label for="exampleFormControlTextarea1">Description</label>
             <textarea
-              class="form-control"
+              class="form-control description-input"
               id="exampleFormControlTextarea1"
               rows="3"
               value={description}
               onChange={e => this.handleChange("description", e.target.value)}
             />
           </div>
-          <div class="form-group edit-post-price-input">
+          <div class="form-group price-input">
             <label for="formGroupExampleInput">Price</label>
             <input
               type="number"
-              className="form-control currency"
+              className="form-control currency price-input"
               pattern="[0-9]"
               min="0"
               step="1"

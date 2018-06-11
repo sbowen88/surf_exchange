@@ -14,21 +14,30 @@
 #save-button {
   margin: 0 10px 5px 0;
 }
-.edit-post-input{
-    display:flex;
-    align-items: center;
-    width:45%;
+.edit-post-input {
+  display: flex;
+  align-items: center;
+  width: 45%;
 }
-.edit-post-price-input{
-    width:20%;
-    align-items:center;
+.price-input {
+  width: 35%;
+  align-items: center;
+}
+.title-input,
+.price-input,
+.description-input {
+  font-size: 20px;
 }
 @media screen and (max-width: 768px) {
-    .edit-post-input {
-      width:90%;
-    }
-    .edit-post-price-input{
-        width:40%;
-    }
- 
+  .edit-post-input {
+    width: 90%;
   }
+  .price-input {
+    width: 65%;
+  }
+  .title-input,
+  .price-input,
+  .description-input {
+    font-size: 15px;
+  }
+}
