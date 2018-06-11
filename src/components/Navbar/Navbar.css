@@ -4,6 +4,7 @@
   font-size: 18px;
   width: 100%;
 }
+
 a {
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
@@ -42,6 +43,7 @@ a:hover {
   }
   .refresh-btn {
     display: inline-block;
+    margin-left:2px;
   }
   .search-button {
     display: inline-block;
